@@ -1,3 +1,85 @@
+/* 
+  основной цвет текста #757575
+  вторичный цвет текста/заголовки #212121
+  акцент #2196F3
+  цвет логотип #000000
+  цвет футер/адрес физический/h1/button #ffffff
+  цвет фона dark #2F303A
+  цвет фона section #F5F4FA
+  цвет мейл+телефон футер rgba(255, 255, 255, 0.6);
+*/
+/* 
+  шрифт логотипа Raleway 700
+  основной шрифт Roboto 400(вторичный текст) 500/ 700/ 900(h1)
+*/
+:root {
+  --primary-text-color: #757575;
+  --primary-logo-color: #000000;
+  --primary-white-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196F3;
+  --background-color-footer: #2F303A;
+  --background-color-section: #F5F4FA;
+  --color-text-footer: rgba(255, 255, 255, 0.6);
+
+}
+
 body {
-  color: blue;
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.site-logo span {
+  color: var(--accent-color);
+}
+
+/* site nav */
+
+.site-nav a {
+  color: var(--title-text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero-title {
+  color: var(--primary-white-color);
+  background-color: var(--background-color-footer);
+}
+
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* section */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* features */
+
+.features-title {
+  color: var(--title-text-color);
+}
+
+/* Buttons */
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--background-color-section);
+}
+
+.button:hover {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
