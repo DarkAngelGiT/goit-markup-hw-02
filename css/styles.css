@@ -19,7 +19,7 @@
   --title-text-color: #212121;
   --accent-color: #2196F3;
   --background-color-footer: #2F303A;
-  --background-color-section: #F5F4FA;
+  --background-color-secondary: #F5F4FA;
   --color-text-footer: rgba(255, 255, 255, 0.6);
 
 }
@@ -39,12 +39,16 @@ body {
 
 /* site nav */
 
-.site-nav a {
+.site-nav .link {
   color: var(--title-text-color);
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
   color: var(--accent-color);
 }
 
@@ -76,7 +80,7 @@ body {
 
 .button {
   color: var(--title-text-color);
-  background-color: var(--background-color-section);
+  background-color: var(--background-color-secondary);
 }
 
 .button:hover {
