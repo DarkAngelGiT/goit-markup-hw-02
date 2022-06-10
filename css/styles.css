@@ -21,10 +21,12 @@
   --background-color-footer: #2F303A;
   --background-color-secondary: #F5F4FA;
   --color-text-footer: rgba(255, 255, 255, 0.6);
+  --btn-hover-color: #188CE8;
 
 }
 
 body {
+  font-family: 'Roboto', sans-serif;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
 }
@@ -33,35 +35,56 @@ body {
   list-style: none;
 }
 
-.site-logo span {
+.link {
+  text-decoration: none;
+}
+/* header */
+
+.header-logo {
+  font-family: 'Raleway', sans-serif;
+  color: var(--primary-logo-color);
+}
+.header-logo span {
   color: var(--accent-color);
 }
 
-/* site nav */
-
-.site-nav .link {
+.header-nav .link {
   color: var(--title-text-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header-nav .link:hover,
+.header-nav .link:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link.current {
+.header-nav .link.current {
+  color: var(--accent-color);
+}
+
+.contact-link {
+  color: var(--primary-text-color);
+}
+.contact-link:hover,
+.contact-link:focus {
   color: var(--accent-color);
 }
 
 /* hero */
 
-.hero-title {
-  color: var(--primary-white-color);
+.hero {
   background-color: var(--background-color-footer);
+  color: var(--primary-white-color);
 }
+
+/* .hero-title {} */
 
 .hero-button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+.hero-button:hover {
+  background-color: var(--btn-hover-color);
 }
 
 /* section */
@@ -76,6 +99,7 @@ body {
   color: var(--title-text-color);
 }
 
+/*---- Portfolio ----*/
 /* Buttons */
 
 .button {
