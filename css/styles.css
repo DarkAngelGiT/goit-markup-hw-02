@@ -29,6 +29,7 @@ body {
   background-color: var(--primary-white-color);
 
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   font-weight: 400;  
   letter-spacing: 0.03em;
 }
@@ -108,7 +109,7 @@ body {
 
   font-family: 'Roboto';
   font-weight: 700;
-  font-size: 16px;
+  font-size: 16px;  
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
@@ -173,8 +174,7 @@ body {
 }
 
 .team-list-title,
-.team-list-text {
-  font-size: 16px;
+.team-list-text {  
   line-height: 1.19;
   text-align: center;
 }
@@ -267,6 +267,6 @@ body {
 }
  
 .examples-text {
-  font-size: 16px;
+  
   line-height: 1.88;  
 }
